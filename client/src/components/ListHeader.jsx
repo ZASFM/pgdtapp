@@ -1,7 +1,16 @@
-const ListHeader=()=>{
+const ListHeader=({listName})=>{
+
+  const signOut=()=>{
+    console.log('signOut');
+  }
+
    return (
      <div className="list-header">
-       ListHeader
+       {listName}
+       <div className="button-container">
+         <button className="create">New</button>
+         <button onClick={signOut} className="signout">SignOut</button>
+       </div>
      </div>
    )
  }
