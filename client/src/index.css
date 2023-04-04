@@ -23,7 +23,7 @@ body {
   border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
 }
 
-.button-container {
+.button-container, .info-container {
   display: flex;
   align-items: center;
 }
@@ -36,3 +36,54 @@ body {
   font-size: 10px;
 }
 
+.list-item{
+  width: 100%;
+  margin:10px 0;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.08) 0 0 0 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tick{
+  padding: 10px;
+}
+
+.tick path{
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 32px;
+}
+
+.edit{
+  border: 1px solid rgb(141,181,145);
+  color: rgb(141,181,145);
+  text-transform: uppercase;
+}
+
+.edit:hover{
+  background-color: rgb(182,223,186);
+}
+
+.edit:active{
+  border: 1px solid rgb(141,181,145);
+  color: rgb(255,255,255);
+  background-color: rgb(141,181,145);
+}
+
+.delete{
+  border: 1px solid rgb(255,175,163);
+  color: rgb(255,175,163);
+  text-transform: uppercase;
+}
+
+.delete:hover{
+  background-color: rgb(182,201,193);
+}
+
+.delete:active{
+  border: 1px solid rgb(141,175,163);
+  color: rgb(255,255,255);
+  background-color: rgb(141,175,163);
+}
